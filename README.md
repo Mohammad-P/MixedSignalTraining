@@ -4,8 +4,8 @@ A compact, high-performance embedded controller board designed for robotics, sci
 The platform integrates precision sensing, multi-protocol communication, bi-directional motor control, audio processing, and an onboard debugging interface — all powered by the STM32F407 ARM Cortex-M4 microcontroller.
 
 
-This repository contains my implementation of a fully featured embedded controller board designed during my training in electronics hardware design.  
-The project was completed as part of the **“Complete Electronics Hardware Design Course 2025 – EsteemPCB”** on **Udemy**, where I applied professional design practices in schematic capture, PCB layout, component selection, documentation, and embedded hardware integration.
+**This repository contains my implementation of a fully featured embedded controller board designed during my training in electronics hardware design.  
+The project was completed as part of the **“Complete Electronics Hardware Design Course 2025 – EsteemPCB”** on **Udemy**, where I applied professional design practices in schematic capture, PCB layout, component selection, documentation, and embedded hardware integration.**
 ---
 
 ## 🚀 Features
@@ -58,32 +58,33 @@ The project was completed as part of the **“Complete Electronics Hardware Desi
 ---
 
 ## 📦 Repository Structure
+```text
 project/
 ├── docs/
-│ ├── overview.md
-│ ├── architecture.md
-│ └── specifications.md
+│   ├── overview.md
+│   ├── architecture.md
+│   └── specifications.md
 │
 ├── hardware/
-│ ├── schematics/
-│ ├── pcb/
-│ └── libraries/
+│   ├── schematics/
+│   ├── pcb/
+│   └── libraries/
 │
 ├── firmware/
-│ ├── src/
-│ ├── include/
-│ └── examples/
+│   ├── src/
+│   ├── include/
+│   └── examples/
 │
 ├── simulation/
-│ ├── analog/
-│ ├── motor/
-│ └── signal_integrity/
+│   ├── analog/
+│   ├── motor/
+│   └── signal_integrity/
 │
 └── assets/
-├── images/
-├── renders/
-└── block_diagrams/
-
+    ├── images/
+    ├── renders/
+    └── block_diagrams/
+```
 ---
 
 ## 📚 Documentation
@@ -132,5 +133,6 @@ See the LICENSE(LICENSE) file for details.
 
 For questions, suggestions, or collaboration:  
 **[Mohammad Pourmand /mohammad.pourmand@gmail.com]**
+
 
 
