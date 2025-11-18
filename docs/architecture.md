@@ -26,13 +26,13 @@ The system is organized into the following major subsystems:
 - 168 MHz CPU  
 - DSP + Floating Point Unit  
 - 1 MB Flash, 192 KB SRAM  
-- Native interfaces: USB OTG, Ethernet MAC, CAN, SPI, UART, I²C  
+- Native interfaces: USB OTG, Ethernet MAC, CAN, SPI, UART, IÂ²C  
 
 ### 2.2 External Components
-- 8/16 MHz crystal  
+- 8 MHz crystal  
 - Boot configuration resistors  
 - SWD/JTAG header  
-- Decoupling network (multi-capacitor: 100nF, 4.7µF, bulk)
+- Decoupling network (multi-capacitor: 100nF, 4.7ÂµF, bulk)
 
 ---
 
@@ -49,8 +49,7 @@ The system is organized into the following major subsystems:
 # 4. Communication Interfaces
 
 ## 4.1 Ethernet  
-- PHY: LAN8720A or DP83848  
-- RMII interface to MCU  
+- PHY: DP838426IRHBR 
 - RJ45 with integrated magnetics  
 - Ethernet link/activity LEDs
 
@@ -63,7 +62,6 @@ The system is organized into the following major subsystems:
 - MCU CAN peripheral  
 - External CAN transceiver (SN65HVD230 / TJA1050)  
 - Termination resistor option  
-- ESD-protected connector  
 
 ## 4.4 UARTs  
 - 3.3V TTL UART  
@@ -74,18 +72,12 @@ The system is organized into the following major subsystems:
 # 5. Precision Analog Measurement Subsystem
 
 ## 5.1 ADS122C04 24-bit ADC  
-- Differential measurement: 0–10 mV  
+- Differential measurement: 0â€“10 mV  
 - Common-mode voltage: 2.5V  
-- PGA up to ×128  
-- I²C communication  
+- PGA up to Ã—128  
+- IÂ²C communication  
 - External precision reference (2.5V)  
 - External crystal/clock input  
-
-## 5.2 Analog Front-End (AFE)
-- Differential RC anti-aliasing filter  
-- Guard ring around sensitive nodes  
-- Star-connected AGND  
-- Shielding and spacing from digital lines  
 
 ---
 
@@ -103,15 +95,15 @@ The system is organized into the following major subsystems:
 
 ## 6.3 PWM Control  
 - PWM input from STM32 timers  
-- Supports 0–100% duty cycle  
-- Recommended PWM frequency: 20–30 kHz  
+- Supports 0â€“100% duty cycle  
+- Recommended PWM frequency: 20â€“30 kHz  
 
 ---
 
 # 7. Audio Subsystem
 
 ## 7.1 DAC + Amplifiers
-- I²C-configurable DAC  
+- IÂ²C-configurable DAC  
 - Headphone amplifier  
 - Speaker amplifier  
 - Low-pass reconstruction filters  
@@ -134,7 +126,7 @@ The system is organized into the following major subsystems:
 ## 8.2 Power Rails  
 - Buck converters: 12V or 5V / 3.3V  
 - Low-noise LDOs for analog & audio  
-- PGND, DGND, AGND separation  
+- Earth, DGND and AGND separation  
 
 ## 8.3 Power Distribution Strategy  
 - Dedicated motor power domain  
@@ -160,3 +152,4 @@ The system is organized into the following major subsystems:
 ---
 
 This architecture serves as a solid demonstration of modern embedded hardware design practices and system-level integration.
+
