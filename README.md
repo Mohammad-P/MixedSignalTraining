@@ -5,7 +5,6 @@ The platform integrates precision sensing, multi-protocol communication, bi-dire
 
 
 **This repository contains my implementation of a fully featured embedded controller board designed during my training in electronics hardware design.  
-The project was completed as part of the **“Complete Electronics Hardware Design Course 2025 – EsteemPCB”** on **Udemy**, where I applied professional design practices in schematic capture, PCB layout, component selection, documentation, and embedded hardware integration.**
 ---
 
 ## 🚀 Features
@@ -133,6 +132,7 @@ See the LICENSE(LICENSE) file for details.
 
 For questions, suggestions, or collaboration:  
 **[Mohammad Pourmand /mohammad.pourmand@gmail.com]**
+
 
 
 
